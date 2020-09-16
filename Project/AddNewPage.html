@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="DivStyle.css">
+<style type="text/css" media="screen">
+</style>
+<script src="Javascript/JavaScripts.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="TooltipStyle.css">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<button onclick="typemb()" class="tooltip">Mb<span class="tooltiptext">Option for products with digital memory storage space</span></button>
+<button onclick="typekg()" class="tooltip">Kg<span class="tooltiptext">Option for products that should be represented in actual weight</span></button>
+<button onclick="type3d()" class="tooltip">Dimensions<span class="tooltiptext">Option for products that usually are measured in 3 dimensions(such as furniture)</span></button>
+<br>
+<form method="POST" id="Form">
+<div>
+
+<div class="div1">SKU <br><INPUT TYPE = "Text" id = "SKU" ></div>
+<div class="div1">Name <br><INPUT TYPE = "Text" id = "Name" ></div>
+<div class="div1">Price <br><INPUT TYPE = "Text" id = "Price" ></div>
+<button onclick="Pass2php()"  type="submit">Add</button>
+<div id="SpecAtr" name="Mb">Mb<br><INPUT TYPE = "Text" id = "Mb" name="Size" ></div>
+
+
+
+
+
+<div id="result"></div>
+</div>
+</form>
+
+</body>
+</html>
